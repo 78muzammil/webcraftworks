@@ -49,7 +49,7 @@
 
         /* Customizing navbar toggler icon */
         .navbar-toggler-icon {
-/*             background-color: lightgrey; /* Make the toggler icon golden */ */
+/*            background-color: lightgrey; /* Make the toggler icon golden */*/
         }
 
         .navbar-collapse {
@@ -104,85 +104,104 @@
         .text-muted {
             color: #888 !important;
         }
-        .footer {
-            background-color: #222;
+        footer {
+            background-color: #007bff;
             color: #fff;
         }
 
-        .footer h5 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
+        footer h3, footer h5, footer h6 {
+            font-weight: 600;
         }
 
-        .footer ul li {
-            margin-bottom: 0.5rem;
+        footer p {
+            color: #f8f9fa;
         }
 
-        .footer ul li a {
-            text-decoration: none;
-            color: #fff;
-            transition: color 0.3s;
-        }
-
-        .footer ul li a:hover {
-            color: #007bff; /* Golden color for hover */
-        }
-
-        .footer .social-icons a {
+        footer .social-icons a {
             font-size: 1.5rem;
             transition: color 0.3s ease;
         }
 
-        .footer .social-icons a:hover {
+        footer .social-icons a:hover {
             color: #25d366; /* Green color for WhatsApp */
         }
 
-        .footer .social-icons a:nth-child(2):hover {
+        footer .social-icons a:nth-child(2):hover {
             color: #007bff; /* Blue color for Email */
         }
 
-        .footer .social-icons a:nth-child(3):hover {
+        footer .social-icons a:nth-child(3):hover {
             color: #e4405f; /* Instagram pink */
         }
 
-        .footer .social-icons a:nth-child(4):hover {
+        footer .social-icons a:nth-child(4):hover {
             color: #3b5998; /* Facebook blue */
         }
 
-        .footer .social-icons a:nth-child(5):hover {
+        footer .social-icons a:nth-child(5):hover {
             color: #00aced; /* Twitter blue */
         }
 
-        .footer .social-icons a:nth-child(6):hover {
+        footer .social-icons a:nth-child(6):hover {
             color: #34b7f1; /* Call icon color */
         }
 
-        .footer .social-icons a:nth-child(7):hover {
+        footer .social-icons a:nth-child(7):hover {
             color: #00aff0; /* Skype icon color */
         }
 
-        .footer .social-icons a:nth-child(8):hover {
+        footer .social-icons a:nth-child(8):hover {
             color: #2c8bff; /* Zoom icon color */
         }
 
-        .footer .container {
+        footer .container {
             max-width: 1140px;
         }
 
-        .footer form .form-control {
+        footer form .form-control {
             border-radius: 20px;
         }
 
-        .footer form button {
+        footer form button {
             border-radius: 20px;
             background-color: #007bff;
             color: white;
         }
 
-        .footer form button:hover {
+        footer form button:hover {
             background-color: #e67e22;
         }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 767px) {
+        footer .social-icons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        footer .social-icons a {
+            margin-right: 15px;
+            font-size: 1.25rem;
+        }
+
+        footer .col-md-4 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        footer .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        footer h3, footer h5 {
+            font-size: 1.2rem;
+        }
+
+        footer .social-icons a {
+            font-size: 1.5rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -405,20 +424,21 @@
 </section>
 
 <!-- Footer -->
-<footer class="text-white pt-4 pb-3" style="background-color:#007bff;">
+<footer class="footer text-white pt-4 pb-4" style="background-color:#007bff;">
     <div class="container">
         <div class="row">
             <!-- Footer Left Section: About -->
-            <div class="col-md-4">
-                <h3>About Us</h3>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h3 class="h5">About Us</h3>
                 <p>Webcraftworks is dedicated to crafting custom websites and applications that help your business grow. Our team provides innovative solutions with a focus on user experience and performance.</p>
             </div>
 
             <!-- Footer Center Section: Quick Links -->
-            <div class="col-md-4">
-             <!--    <h5>Quick Links</h5>
-                <ul class="list-unstyled"> -->
-                  <!--   <li><a href="#about" class="text-white">About Us</a></li>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <!-- Uncomment if Quick Links are needed
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-white">About Us</a></li>
                     <li><a href="#services" class="text-white">Our Services</a></li>
                     <li><a href="#contact" class="text-white">Contact</a></li>
                     <li><a href="#portfolio" class="text-white">Portfolio</a></li>
@@ -427,7 +447,7 @@
 
             <!-- Footer Right Section: Newsletter -->
             <div class="col-md-4">
-                <h5>Newsletter</h5>
+                <h5 class="h6">Newsletter</h5>
                 <p>Stay updated with our latest news and offers. Subscribe to our newsletter.</p>
                 <form action="#" method="POST" class="d-flex">
                     <input type="email" class="form-control me-2" placeholder="Your Email" required>
@@ -446,12 +466,7 @@
                     <a href="https://wa.me/917895962142" target="_blank" title="WhatsApp" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
                     <a href="mailto:webcraftwork@gmail.com" title="Email" class="text-white me-3"><i class="bi bi-envelope"></i></a>
                     <a href="https://instagram.com/webcraft.works" target="_blank" title="Instagram" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                 <!--    <a href="https://facebook.com/your_profile" target="_blank" title="Facebook" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/your_profile" target="_blank" title="Twitter" class="text-white me-3"><i class="bi bi-twitter"></i></a> -->
-                    <!-- Additional Call Icons -->
                     <a href="tel:+917895962142" title="Call" class="text-white me-3"><i class="bi bi-telephone"></i></a>
-                    <!-- <a href="skype:your_skype_id?call" target="_blank" title="Skype" class="text-white me-3"><i class="bi bi-skype"></i></a> -->
-                    <!-- <a href="zoommtg://zoom.us/join?confno=your_meeting_id" title="Zoom" class="text-white me-3"><i class="bi bi-camera-video"></i></a> -->
                 </div>
             </div>
         </div>
